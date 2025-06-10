@@ -1,0 +1,131 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #272727;
+}
+.container
+{
+    position: absolute;
+    width: 700px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+.container .form
+{
+    position: relative;
+    width: 890px;
+    height: 80px;
+    background: #323232;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.container .form .input
+{
+    position: relative;
+    width: 80%;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 0;
+    background: #373737;
+    border: none;
+    outline: none;
+    border-radius: inherit;
+    color: #fff;
+    &:focus
+    {
+        filter: brightness(1.1);
+    }
+}
+.container .form .btn-add
+{
+    position: relative;
+    padding: 9.4px 20px;
+    border-radius: inherit;
+    background: #1269cc;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    &:hover
+    {
+        filter: brightness(1.1);
+        &:active
+        {
+            filter: brightness(1);
+        }
+    }
+}
+.container .tasks
+{
+    position: absolute;
+    width: 700.5px;
+    padding: 20px;
+    background: #323232;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 120px;
+    border-radius: 5px;
+    & .task-div
+    {
+        position: relative;
+        width: 670px;
+        height: 50px;
+        border-radius: inherit;
+        background: #393939;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 15px;
+        padding-right: 10px;
+        & h3
+        {
+            color: #fff;
+            font-weight: 100;
+            letter-spacing: 0.9px;
+            text-transform: capitalize;
+            font-size: 1.3em;
+        }
+        & .btn-remove
+        {
+            position: relative;
+            width: 100px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            outline: none;
+            align-items: center;
+            padding: 7.4px;
+            border-radius: inherit;
+            background: #cc1240;
+            color: #fff;
+            cursor: pointer;
+            border: none;
+            &:hover
+            {
+                filter: brightness(1.1);
+                &:active
+                {
+                    filter: brightness(1);
+                }
+            }
+        }
+    }
+}
